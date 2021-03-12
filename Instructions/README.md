@@ -79,15 +79,25 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 
 Solutions
 
+
+Compiled and deployed PupperCrowdsale (this acitivity anouncement ask us "The crowdsale will run for 24 weeks" I used 7 minutes istead, due to the activity delivry day.
+
 ![contract](Images/new.jpg)
 
 ![contract](Images/NewPupperCoinTokensbalance.jpg)
 
 ![contract](Images/NewPupperCoinSaleDeployer.jpg)
 
+
+Finalized the ICO.
+
 ![contract](Images/NewFinalizeTheICO.jpg)
 
+Withdrew tokens in the ICO Sale.
+
 ![contract](Images/NewWithdrawTokensinTheICOSale.jpg)
+
+PupperCoinSale Balance.
 
 ![contract](NewPupperCoinSaleBalance.jpg)
 
