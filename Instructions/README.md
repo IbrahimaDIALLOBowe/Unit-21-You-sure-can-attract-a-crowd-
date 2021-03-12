@@ -70,7 +70,7 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 Solutions
 
 
-Compiled and deployed PupperCrowdsale (this acitivity anouncement ask us "The crowdsale will run for 24 weeks" I used 7 minutes instead, due to the activity delivry day.
+Compiled and deployed PupperCrowdsale (this acitivity announcement ask us "The crowdsale will run for 24 weeks" I used 7 minutes instead, due to the activity delivery day.
 
 ![contract](Images/new.jpg)
 
