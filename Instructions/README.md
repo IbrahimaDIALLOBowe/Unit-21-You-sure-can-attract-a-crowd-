@@ -16,7 +16,7 @@ It will need to inherit `Crowdsale`, `CappedCrowdsale`, `TimedCrowdsale`, `Refun
 
 You will conduct the crowdsale on the Kovan or Ropsten testnet in order to get a real-world pre-production test in.
 
-![contract](Images/New.jpg)
+![contract](Images/new.jpg)
 
 ![contract](Images/NewPupperCoinTokensbalance.jpg)
 
@@ -79,7 +79,7 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 
 Solutions
 
-![contract](Images/New.jpg)
+![contract](Images/new.jpg)
 
 ![contract](Images/NewPupperCoinTokensbalance.jpg)
 
