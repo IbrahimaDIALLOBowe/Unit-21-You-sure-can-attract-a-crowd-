@@ -16,17 +16,7 @@ It will need to inherit `Crowdsale`, `CappedCrowdsale`, `TimedCrowdsale`, `Refun
 
 You will conduct the crowdsale on the Kovan or Ropsten testnet in order to get a real-world pre-production test in.
 
-![contract](Images/new.jpg)
 
-![contract](Images/NewPupperCoinTokensbalance.jpg)
-
-![contract](Images/NewPupperCoinSaleDeployer.jpg)
-
-![contract](Images/NewFinalizeTheICO.jpg)
-
-![contract](Images/NewWithdrawTokensinTheICOSale.jpg)
-
-![contract](NewPupperCoinSaleBalance.jpg)
 
 ## Instructions
 
@@ -80,7 +70,7 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 Solutions
 
 
-Compiled and deployed PupperCrowdsale (this acitivity anouncement ask us "The crowdsale will run for 24 weeks" I used 7 minutes istead, due to the activity delivry day.
+Compiled and deployed PupperCrowdsale (this acitivity anouncement ask us "The crowdsale will run for 24 weeks" I used 7 minutes instead, due to the activity delivry day.
 
 ![contract](Images/new.jpg)
 
