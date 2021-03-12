@@ -98,5 +98,6 @@ Withdrew tokens in the ICO Sale.
 ![contract](Images/NewWithdrawTokensinTheICOSale.jpg)
 
 PupperCoinSale Balance.
-![contract](NewPupperCoinSaleBalance.jpg)
+
+![contract](Images/NewPupperCoinSaleBa.jpg)
 
