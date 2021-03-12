@@ -16,18 +16,6 @@ It will need to inherit `Crowdsale`, `CappedCrowdsale`, `TimedCrowdsale`, `Refun
 
 You will conduct the crowdsale on the Kovan or Ropsten testnet in order to get a real-world pre-production test in.
 
-![contract](Images/New.jpg)
-
-![contract](Images/NewPupperCoinTokensbalance.jpg)
-
-![contract](Images/NewPupperCoinSaleDeployer.jpg)
-
-![contract](Images/NewFinalizeTheICO.jpg)
-
-![contract](Images/NewWithdrawTokensinTheICOSale.jpg)
-
-![contract](NewPupperCoinSaleBalance.jpg)
-
 ## Instructions
 
 ### Creating your project
@@ -76,18 +64,31 @@ When passing the `open` and `close` times, use `now` and `now + 24 weeks` to set
 
 In this contract, you will model the deployment based off of the `ArcadeTokenCrowdsaleDeployer` you built previously. Leverage the [OpenZeppelin Crowdsale Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales) for an example of a contract deploying another, as well as the starter code provided in [Crowdsale.sol](../Starter-Code/Crowdsale.sol).
 
+### Testing the Crowdsale
 
-Solutions
+Test the crowdsale by sending Ether to the crowdsale from a different account (**not** the same account that is raising funds), then once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can test the time functionality by replacing `now` with `fakenow`, and creating a setter function to modify `fakenow` to whatever time you want to simulate. You can also set the `close` time to be `now + 5 minutes`, or whatever timeline you'd like to test for a shorter crowdsale.
 
-![contract](Images/New.jpg)
+When sending Ether to the contract, make sure you hit your `goal` that you set, and `finalize` the sale using the `Crowdsale`'s `finalize` function. In order to finalize, `isOpen` must return false (`isOpen` comes from `TimedCrowdsale` which checks to see if the `close` time has passed yet). Since the `goal` is 300 Ether, you may need to send from multiple accounts. If you run out of prefunded accounts in Ganache, you can create a new workspace.
 
-![contract](Images/NewPupperCoinTokensbalance.jpg)
+Remember, the refund feature of `RefundablePostDeliveryCrowdsale` only allows for refunds once the crowdsale is closed **and** the goal is met. See the [OpenZeppelin RefundableCrowdsale](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#RefundableCrowdsale) documentation for details as to why this is logic is used to prevent potential attacks on your token's value.
 
-![contract](Images/NewPupperCoinSaleDeployer.jpg)
+You can add custom tokens in MyCrypto from the `Add custom token` feature:
 
-![contract](Images/NewFinalizeTheICO.jpg)
+![add-custom-token](https://i.imgur.com/p1wwXQ9.png)
 
-![contract](Images/NewWithdrawTokensinTheICOSale.jpg)
+You can also do the same for MetaMask. Make sure to purchase higher amounts of tokens in order to see the denomination appear in your wallets as more than a few wei worth.
 
-![contract](NewPupperCoinSaleBalance.jpg)
+### Deploying the Crowdsale
 
+Deploy the crowdsale to the Kovan or Ropsten testnet, and store the deployed address for later. Switch MetaMask to your desired network, and use the `Deploy` tab in Remix to deploy your contracts. Take note of the total gas cost, and compare it to how costly it would be in reality. Since you are deploying to a network that you don't have control over, faucets will not likely give out 300 test Ether. You can simply reduce the goal when deploying to a testnet to an amount much smaller, like 10,000 wei.
+
+### Submission
+
+Create a Github repo, and a `README.md` file explaining the process for purchasing PupperCoin (or whatever name you came up with).
+
+Also, please provide screenshots to illustrate the functionality (e.g. how you send Ether to the contract, how you add the token to MyCrypto and test a transaction, and how you test the time functionality etc.). Alternatively, you can also record your interactions with the contract as a gif (e.g. https://www.screentogif.com/)
+
+
+Ensure that anyone can run the steps and add the token to MyCrypto, or a similar wallet.
+
+Include information such as the token parameters, token name, crowdsale cap, etc.
